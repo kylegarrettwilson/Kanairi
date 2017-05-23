@@ -20,17 +20,17 @@ class LoginViewController: UIViewController, UIWebViewDelegate{
         super.viewWillAppear(animated)
         
         
-        if #available(iOS 10.0, *) {
-            var timer = Timer.scheduledTimer(withTimeInterval: 540, repeats: true) {
-                (_) in
-                let url = URL(string: "http://159.203.251.4/index.php");
-                let request = URLRequest(url: url!);
-                self.webview.loadRequest(request);
+       // if #available(iOS 10.0, *) {
+         //   var timer = Timer.scheduledTimer(withTimeInterval: 540, repeats: true) {
+            //    (_) in
+          //      let url = URL(string: "http://159.203.251.4/index.php");
+          //      let request = URLRequest(url: url!);
+         //       self.webview.loadRequest(request);
                 
-            }
-        } else {
+         //   }
+       // } else {
             // Fallback on earlier versions
-        }
+        //}
         
         
         

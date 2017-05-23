@@ -575,6 +575,8 @@ class DeviceDetailViewController: StaticDataTableViewController, DFUServiceDeleg
                     self.accelerometerBMI160StopStream.isEnabled = false
                     self.streamingEvents.remove(self.device.accelerometer!.dataReadyEvent)
                     self.device.accelerometer!.dataReadyEvent.stopNotificationsAsync()
+                    self.accelerometerBMI160StartStream.alpha = 1
+                    self.accelerometerBMI160StopStream.alpha = 0.3
                     
                     print("X 911")
                     
@@ -592,6 +594,8 @@ class DeviceDetailViewController: StaticDataTableViewController, DFUServiceDeleg
                     self.accelerometerBMI160StopStream.isEnabled = false
                     self.streamingEvents.remove(self.device.accelerometer!.dataReadyEvent)
                     self.device.accelerometer!.dataReadyEvent.stopNotificationsAsync()
+                    self.accelerometerBMI160StartStream.alpha = 1
+                    self.accelerometerBMI160StopStream.alpha = 0.3
                     
                     print("Y 911")
                     
@@ -609,6 +613,8 @@ class DeviceDetailViewController: StaticDataTableViewController, DFUServiceDeleg
                     self.accelerometerBMI160StopStream.isEnabled = false
                     self.streamingEvents.remove(self.device.accelerometer!.dataReadyEvent)
                     self.device.accelerometer!.dataReadyEvent.stopNotificationsAsync()
+                    self.accelerometerBMI160StartStream.alpha = 1
+                    self.accelerometerBMI160StopStream.alpha = 0.3
                     
                     print("Z 911")
                     
