@@ -378,9 +378,232 @@
                       <li>Only available for iOS devices</li>
                       <li>Must be running 9.1 operating system or above on iPhone</li>
                     </ul>
-                      <a href="#" class="btn-get text-center"><i class="fa fa-shield"></i> Purchase </a>
-                      <a href="#" class="btn-get text-center"> <i class="fa fa-apple"></i> App </a>
-                      <a href="faq.html" class="btn-get text-center"> <i class="fa fa-cog"></i> FAQ </a>
+
+
+                      <div id='product-component-f286f932758'></div>
+                      <script type="text/javascript">
+                          /*<![CDATA[*/
+
+                          (function () {
+                              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                              if (window.ShopifyBuy) {
+                                  if (window.ShopifyBuy.UI) {
+                                      ShopifyBuyInit();
+                                  } else {
+                                      loadScript();
+                                  }
+                              } else {
+                                  loadScript();
+                              }
+
+                              function loadScript() {
+                                  var script = document.createElement('script');
+                                  script.async = true;
+                                  script.src = scriptURL;
+                                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                  script.onload = ShopifyBuyInit;
+                              }
+
+                              function ShopifyBuyInit() {
+                                  var client = ShopifyBuy.buildClient({
+                                      domain: 'bootstrap-roadmap.myshopify.com',
+                                      apiKey: '206f10a1959906673748af2d2a5c3841',
+                                      appId: '6'
+                                  });
+
+                                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                      ui.createComponent('product', {
+                                          id: [10492251459],
+                                          node: document.getElementById('product-component-f286f932758'),
+                                          moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                          options: {
+                                              "product": {
+                                                  "buttonDestination": "checkout",
+                                                  "variantId": "all",
+                                                  "width": "240px",
+                                                  "contents": {
+                                                      "img": false,
+                                                      "imgWithCarousel": false,
+                                                      "title": false,
+                                                      "variantTitle": false,
+                                                      "price": false,
+                                                      "description": false,
+                                                      "buttonWithQuantity": false,
+                                                      "quantity": false
+                                                  },
+                                                  "text": {
+                                                      "button": "BUY NOW"
+                                                  },
+                                                  "styles": {
+                                                      "product": {
+                                                          "text-align": "left",
+                                                          "@media (min-width: 601px)": {
+                                                              "max-width": "100%",
+                                                              "margin-left": "0",
+                                                              "margin-bottom": "50px"
+                                                          }
+                                                      },
+                                                      "button": {
+                                                          "background-color": "#e74e15",
+                                                          "font-size": "17px",
+                                                          "padding-top": "16.5px",
+                                                          "padding-bottom": "16.5px",
+                                                          ":hover": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          ":focus": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "variantTitle": {
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "title": {
+                                                          "color": "#ffffff"
+                                                      },
+                                                      "description": {
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "price": {
+                                                          "color": "#ffffff",
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "quantityInput": {
+                                                          "font-size": "17px",
+                                                          "padding-top": "16.5px",
+                                                          "padding-bottom": "16.5px"
+                                                      },
+                                                      "compareAt": {
+                                                          "font-size": "12px",
+                                                          "color": "#ffffff",
+                                                          "font-family": "Helvetica Neue, sans-serif",
+                                                          "font-weight": "bold"
+                                                      }
+                                                  }
+                                              },
+                                              "cart": {
+                                                  "contents": {
+                                                      "button": true
+                                                  },
+                                                  "text": {
+                                                      "total": "Total"
+                                                  },
+                                                  "styles": {
+                                                      "button": {
+                                                          "background-color": "#e74e15",
+                                                          "font-size": "17px",
+                                                          "padding-top": "16.5px",
+                                                          "padding-bottom": "16.5px",
+                                                          ":hover": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          ":focus": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "footer": {
+                                                          "background-color": "#ffffff"
+                                                      }
+                                                  }
+                                              },
+                                              "modalProduct": {
+                                                  "contents": {
+                                                      "img": false,
+                                                      "imgWithCarousel": true,
+                                                      "variantTitle": false,
+                                                      "buttonWithQuantity": false,
+                                                      "quantity": false
+                                                  },
+                                                  "styles": {
+                                                      "product": {
+                                                          "@media (min-width: 601px)": {
+                                                              "max-width": "100%",
+                                                              "margin-left": "20px",
+                                                              "margin-bottom": "50px"
+                                                          }
+                                                      },
+                                                      "button": {
+                                                          "background-color": "#e74e15",
+                                                          "font-size": "17px",
+                                                          "padding-top": "16.5px",
+                                                          "padding-bottom": "16.5px",
+                                                          ":hover": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          ":focus": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "variantTitle": {
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "description": {
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "price": {
+                                                          "font-size": "14px",
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "quantityInput": {
+                                                          "font-size": "17px",
+                                                          "padding-top": "16.5px",
+                                                          "padding-bottom": "16.5px"
+                                                      },
+                                                      "compareAt": {
+                                                          "font-family": "Helvetica Neue, sans-serif",
+                                                          "font-weight": "bold"
+                                                      }
+                                                  }
+                                              },
+                                              "toggle": {
+                                                  "styles": {
+                                                      "toggle": {
+                                                          "background-color": "#e74e15",
+                                                          ":hover": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          ":focus": {
+                                                              "background-color": "#d04613"
+                                                          },
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "count": {
+                                                          "font-size": "17px"
+                                                      }
+                                                  }
+                                              },
+                                              "option": {
+                                                  "styles": {
+                                                      "label": {
+                                                          "font-weight": "bold"
+                                                      },
+                                                      "select": {
+                                                          "font-weight": "bold"
+                                                      }
+                                                  }
+                                              },
+                                              "productSet": {
+                                                  "styles": {
+                                                      "products": {
+                                                          "@media (min-width: 601px)": {
+                                                              "margin-left": "-20px"
+                                                          }
+                                                      }
+                                                  }
+                                              }
+                                          }
+                                      });
+                                  });
+                              }
+                          })();
+                          /*]]>*/
+                      </script>
+
+
+
                   </div>
                 </div>
               </div>
@@ -417,7 +640,10 @@
             <div class="section-title center">
               <h2>Apps <strong style="color:#e74e15">Screen Shot</strong></h2>
               <hr>
+                <a href="#" class="btn-get text-center"> <i class="fa fa-apple"></i> App </a>
+                <a href="faq.html" class="btn-get text-center"> <i class="fa fa-cog"></i> FAQ </a>
               <p class="para">We have worked hard to develop a very user friendly interface that is designed to step you through each feature<strong> effortlessly</strong></p>
+
             </div>
             <div id="owl-screenshots" class="owl-carousel">
               <div class="item"><img src="images/app-screenshots/screen-1.png" alt="">
