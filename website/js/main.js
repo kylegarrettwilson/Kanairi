@@ -88,7 +88,7 @@ $('.navbar-collapse ul li a').click(function() {
       $("#Testimonial").owlCarousel({
         navigation : true,
         singleItem : true,
-        autoPlay: true,
+        autoPlay: false,
         pagination:false
        });   
     });
